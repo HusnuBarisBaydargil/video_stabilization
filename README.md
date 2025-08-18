@@ -28,3 +28,15 @@ QStab provides a simple yet effective approach for stabilizing videos affected b
 - OpenCV
 - NumPy
 
+## 📖 Citation
+
+Our article describing QStab has been submitted to journals and is currently under review.  
+If you use this code or find it helpful in your research, please cite it as follows:
+
+```bibtex
+@unpublished{qstab2025,
+  author    = {Ince, Ibrahim Furkan and Baydargil, Husnu Baris and Yıldırım, Mustafa Eren and Bulut, Faruk},
+  title     = {QStab: A Light-weight Video Stabilization Algorithm Robust to High-Frequency Perturbations},
+  note      = {Manuscript submitted for publication},
+  year      = {2025}
+}
