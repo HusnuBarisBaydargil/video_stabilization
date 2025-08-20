@@ -28,6 +28,19 @@ QStab provides a simple yet effective approach for stabilizing videos affected b
 - OpenCV
 - NumPy
 
+---
+
+## 📂 Data Download
+
+For reproducibility and evaluation, benchmark video datasets can be downloaded from the following sources:
+
+- **SBMnet Dataset**: [http://pione.dinf.usherbrooke.ca/dataset](http://pione.dinf.usherbrooke.ca/dataset)  
+- **NUS Dataset**: [http://liushuaicheng.org/SIGGRAPH2013/database.html](http://liushuaicheng.org/SIGGRAPH2013/database.html)
+
+These datasets can be used to test and compare the performance of the QStab algorithm under different motion scenarios.
+
+---
+
 ## 📖 Citation
 
 Our article describing QStab has been submitted to journals and is currently under review.  
