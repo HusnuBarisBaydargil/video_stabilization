@@ -43,7 +43,7 @@ These datasets can be used to test and compare the performance of the QStab algo
 
 ## 📖 Citation
 
-Our article describing QStab has been submitted to journals and is currently under review.  
+Our article describing QStab is currently under review.  
 If you use this code or find it helpful in your research, please cite it as follows:
 
 ```bibtex
