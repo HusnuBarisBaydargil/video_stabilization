@@ -22,18 +22,20 @@ ORIGINAL_VIDEO_OUTPUT = "original_video.mp4"
 STABILIZED_VIDEO_OUTPUT = "stabilized_video.mp4"
 
 def get_mse(image_a, image_b):
-    """Calculates the Mean Squared Error (MSE) between two images."""
-    err = np.sum((image_a.astype("float") - image_b.astype("float")) ** 2)
-    err /= float(image_a.shape[0] * image_a.shape[1])
-    return err
+if len(image_a.shape) == 2: # Convert grayscale image to 3 channels if necessary
+    image_a = cv2.cvtColor(image_a, cv2.COLOR_GRAY2BGR)
+    image_b = cv2.cvtColor(image_b, cv2.COLOR_GRAY2BGR)
+err = np.sum((image_a.astype("float") - image_b.astype("float")) ** 2)
+err /= float(image_a.shape[0] * image_a.shape[1] * image_a.shape[2]) # Account for channel count
+return err
+
 
 def vibrate_image(image, shake_amount):
-    """Applies an artificial shake to an image."""
+    """Applies an artificial shake to an image using affine transformation."""
     h, w, _ = image.shape
-    new_w = w + shake_amount
-    new_h = h + shake_amount
-    vibrated_image = cv2.resize(image, (new_w, new_h))
-    return vibrated_image[0:h, 0:w]
+    M = np.float32([[1, 0, shake_amount], [0, 1, shake_amount]])
+    vibrated_image = cv2.warpAffine(image, M, (w, h))
+    return vibrated_image
 
 def compile_frames_to_video(input_dir, output_path, fps, frame_size):
     """Takes a directory of images and compiles them into a video file."""
@@ -160,4 +162,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
