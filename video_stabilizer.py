@@ -22,12 +22,12 @@ ORIGINAL_VIDEO_OUTPUT = "original_video.mp4"
 STABILIZED_VIDEO_OUTPUT = "stabilized_video.mp4"
 
 def get_mse(image_a, image_b):
-if len(image_a.shape) == 2: # Convert grayscale image to 3 channels if necessary
-    image_a = cv2.cvtColor(image_a, cv2.COLOR_GRAY2BGR)
-    image_b = cv2.cvtColor(image_b, cv2.COLOR_GRAY2BGR)
-err = np.sum((image_a.astype("float") - image_b.astype("float")) ** 2)
-err /= float(image_a.shape[0] * image_a.shape[1] * image_a.shape[2]) # Account for channel count
-return err
+    if len(image_a.shape) == 2: # Convert grayscale image to 3 channels if necessary
+        image_a = cv2.cvtColor(image_a, cv2.COLOR_GRAY2BGR)
+        image_b = cv2.cvtColor(image_b, cv2.COLOR_GRAY2BGR)
+    err = np.sum((image_a.astype("float") - image_b.astype("float")) ** 2)
+    err /= float(image_a.shape[0] * image_a.shape[1] * image_a.shape[2]) # Account for channel count
+    return err
 
 
 def vibrate_image(image, shake_amount):
@@ -164,3 +164,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
