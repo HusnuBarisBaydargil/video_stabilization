@@ -6,6 +6,8 @@ This repository contains the official Python implementation for the upcoming art
 
 QStab provides a simple yet effective approach for stabilizing videos affected by jitter and high-frequency shakiness. The implementation processes an input video, generates a stabilized version, and delivers a quantitative evaluation report comparing the two.
 
+A complete collection of side-by-side video comparisons demonstrating the algorithm's performance is available in this [Google Drive folder](https://drive.google.com/drive/folders/1btjW8XyeSq4-BwPI1L6Jg7tOk9yDETzk?usp=drive_link).
+
 ---
 
 ## Features
@@ -22,7 +24,7 @@ QStab provides a simple yet effective approach for stabilizing videos affected b
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 - Python 3.8+
 - OpenCV
@@ -30,7 +32,7 @@ QStab provides a simple yet effective approach for stabilizing videos affected b
 
 ---
 
-## 📂 Data Download
+## Data Download
 
 For reproducibility and evaluation, benchmark video datasets can be downloaded from the following sources:
 
@@ -41,7 +43,7 @@ These datasets can be used to test and compare the performance of the QStab algo
 
 ---
 
-## 📖 Citation
+## Citation
 
 Our article describing QStab is currently under review.  
 If you use this code or find it helpful in your research, please cite it as follows:
