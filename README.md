@@ -1,6 +1,6 @@
 # QStab: A Light-weight Video Stabilization Algorithm
 
-This repository contains the official Python implementation for the upcoming article:
+This repository contains the official Python implementation for the article:
 
 **"QStab: A Light-weight Video Stabilization Algorithm Robust to High-Frequency Perturbations"**
 
