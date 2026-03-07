@@ -49,9 +49,14 @@ Our article describing QStab is currently under review.
 If you use this code or find it helpful in your research, please cite it as follows:
 
 ```bibtex
-@unpublished{qstab2025,
-  author    = {Ince, Ibrahim Furkan and Baydargil, Husnu Baris and Yıldırım, Mustafa Eren and Bulut, Faruk},
-  title     = {QStab: A Light-weight Video Stabilization Algorithm Robust to High-Frequency Perturbations},
-  note      = {Manuscript submitted for publication},
-  year      = {2025}
+@article{qstab2025,
+title = {QStab: A lightweight video stabilization algorithm robust to high-frequency perturbations},
+journal = {Knowledge-Based Systems},
+volume = {339},
+pages = {115549},
+year = {2026},
+issn = {0950-7051},
+doi = {https://doi.org/10.1016/j.knosys.2026.115549},
+url = {https://www.sciencedirect.com/science/article/pii/S0950705126002911},
+author = {Ibrahim Furkan Ince and Husnu Baris Baydargil and Mustafa Eren Yıldırım and Faruk Bulut}
 }
